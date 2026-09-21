@@ -30,12 +30,12 @@ const services = [
 const Index = () => {
   return (
     <div className="min-h-screen overflow-hidden bg-background text-foreground">
-      <header className="absolute inset-x-0 top-0 z-30 border-b border-primary-foreground/15">
+      <header className="absolute inset-x-0 top-0 z-30 border-b border-foreground/15">
         <div className="mx-auto flex h-20 max-w-[1440px] items-center justify-between px-5 md:h-24 md:px-10 lg:px-16">
           <a href="#top" aria-label="Zino Digital home" className="block w-44 md:w-56">
             <img src={logoAsset.url} alt="Zino Consulting" className="h-auto w-full" />
           </a>
-          <nav className="hidden items-center gap-9 text-sm text-primary-foreground/75 md:flex" aria-label="Main navigation">
+          <nav className="hidden items-center gap-9 text-sm text-foreground/75 md:flex" aria-label="Main navigation">
             <a className="transition-colors hover:text-primary" href="#services">Services</a>
             <a className="transition-colors hover:text-primary" href="#approach">Approach</a>
             <a className="transition-colors hover:text-primary" href="#contact">Contact</a>
@@ -61,15 +61,15 @@ const Index = () => {
               <span className="h-px w-10 bg-primary" />
               A subsidiary of Zino Consulting
             </div>
-            <h1 className="max-w-5xl font-display text-7xl leading-[0.84] text-primary-foreground sm:text-8xl md:text-[8.5rem] lg:text-[10rem]">
+            <h1 className="max-w-5xl font-display text-7xl leading-[0.84] text-foreground sm:text-8xl md:text-[8.5rem] lg:text-[10rem]">
               Zino <span className="italic text-primary">Digital.</span>
             </h1>
-            <div className="mt-9 grid gap-8 border-t border-primary-foreground/20 pt-7 md:grid-cols-[1fr_1.2fr_auto] md:items-end">
-              <p className="text-sm uppercase tracking-[0.18em] text-primary-foreground/55">Web design · Hosting</p>
-              <p className="max-w-xl text-xl leading-relaxed text-primary-foreground/80 md:text-2xl">
+            <div className="mt-9 grid gap-8 border-t border-foreground/20 pt-7 md:grid-cols-[1fr_1.2fr_auto] md:items-end">
+              <p className="text-sm uppercase tracking-[0.18em] text-foreground/55">Web design · Hosting</p>
+              <p className="max-w-xl text-xl leading-relaxed text-foreground/80 md:text-2xl">
                 Digital foundations made with intent—for businesses ready to be seen, understood and remembered.
               </p>
-              <a href="#services" aria-label="Explore services" className="flex h-12 w-12 items-center justify-center border border-primary-foreground/30 text-primary-foreground transition-colors hover:border-primary hover:text-primary">
+              <a href="#services" aria-label="Explore services" className="flex h-12 w-12 items-center justify-center border border-foreground/30 text-foreground transition-colors hover:border-primary hover:text-primary">
                 <ArrowDown className="h-5 w-5" />
               </a>
             </div>
@@ -140,19 +140,19 @@ const Index = () => {
           </div>
         </section>
 
-        <section id="contact" className="bg-ink py-24 text-primary-foreground md:py-32">
+        <section id="contact" className="bg-ink py-24 text-foreground md:py-32">
           <div className="mx-auto max-w-[1440px] px-5 md:px-10 lg:px-16">
             <p className="eyebrow">Start a conversation</p>
-            <div className="mt-10 grid gap-12 border-b border-primary-foreground/15 pb-16 lg:grid-cols-[1.5fr_1fr] lg:items-end">
+            <div className="mt-10 grid gap-12 border-b border-foreground/15 pb-16 lg:grid-cols-[1.5fr_1fr] lg:items-end">
               <h2 className="font-display text-6xl leading-[0.9] md:text-8xl">Have a project<br />in <span className="italic text-primary">mind?</span></h2>
               <div>
-                <p className="mb-7 max-w-md text-lg leading-relaxed text-primary-foreground/65">Tell us what you are building. We will help you shape the right website and hosting foundation.</p>
+                <p className="mb-7 max-w-md text-lg leading-relaxed text-foreground/65">Tell us what you are building. We will help you shape the right website and hosting foundation.</p>
                 <Button asChild size="lg" className="h-14 bg-primary px-7 text-primary-foreground hover:bg-primary/85">
                   <a href="mailto:sales@zinoconsulting.co.za"><Mail /> sales@zinoconsulting.co.za</a>
                 </Button>
               </div>
             </div>
-            <footer className="grid gap-8 pt-10 text-sm text-primary-foreground/55 md:grid-cols-3">
+            <footer className="grid gap-8 pt-10 text-sm text-foreground/55 md:grid-cols-3">
               <div>
                 <img src={logoAsset.url} alt="Zino Consulting" className="w-52" loading="lazy" />
                 <p className="mt-4">Zino Digital — a subsidiary of Zino Consulting (Pty) Ltd</p>
