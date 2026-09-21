@@ -8,36 +8,36 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 213 45% 15%;
+    --background: 0 0% 3%;
+    --foreground: 43 29% 94%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 213 45% 15%;
+    --card: 0 0% 10%;
+    --card-foreground: 43 29% 94%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 213 45% 15%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 43 29% 94%;
 
-    --primary: 213 45% 25%;
-    --primary-foreground: 0 0% 100%;
-    --primary-glow: 213 60% 40%;
+    --primary: 39 48% 53%;
+    --primary-foreground: 0 0% 3%;
+    --primary-glow: 44 60% 68%;
 
-    --secondary: 43 96% 56%;
-    --secondary-foreground: 213 45% 15%;
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 43 29% 94%;
 
-    --muted: 210 40% 96%;
-    --muted-foreground: 213 20% 45%;
+    --muted: 0 0% 13%;
+    --muted-foreground: 40 7% 61%;
 
-    --accent: 43 96% 56%;
-    --accent-foreground: 213 45% 15%;
+    --accent: 39 48% 53%;
+    --accent-foreground: 0 0% 3%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 213 45% 25%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 39 48% 53%;
 
-    --radius: 0.75rem;
+    --radius: 0.25rem;
 
     --gradient-primary: linear-gradient(135deg, hsl(213 45% 25%), hsl(213 60% 40%));
     --gradient-hero: linear-gradient(180deg, hsl(213 45% 25%), hsl(213 50% 35%));
@@ -107,6 +107,40 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased;
+    font-family: "Work Sans", sans-serif;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: "Instrument Serif", serif;
+    letter-spacing: 0;
+  }
+
+  .eyebrow {
+    @apply text-xs font-medium uppercase text-primary;
+    letter-spacing: 0.22em;
+  }
+
+  .bg-ink {
+    background-color: hsl(var(--background));
+  }
+
+  .bg-surface {
+    background-color: hsl(var(--card));
+  }
+
+  .bg-hero-overlay {
+    background: linear-gradient(90deg, hsl(var(--background) / 0.97) 0%, hsl(var(--background) / 0.82) 48%, hsl(var(--background) / 0.24) 100%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
 }
