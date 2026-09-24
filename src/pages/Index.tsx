@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowUpRight, Check, Code2, Globe2, Mail, Server, Sparkles } from "lucide-react";
+import { ArrowDown, ArrowUpRight, Check, Code2, Github, Globe2, Mail, Server, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logoAsset from "@/assets/zino-consulting-logo.png.asset.json";
 import studioImage from "@/assets/zino-studio.jpg";
@@ -156,6 +156,15 @@ const Index = () => {
               <div>
                 <img src={logoAsset.url} alt="Zino Consulting" className="w-52" loading="lazy" />
                 <p className="mt-4">Zino Digital — a subsidiary of Zino Consulting (Pty) Ltd</p>
+                <a
+                  href="https://github.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="GitHub repository"
+                  className="mt-5 inline-flex h-10 w-10 items-center justify-center border border-foreground/30 text-foreground/70 transition-colors hover:border-primary hover:text-primary"
+                >
+                  <Github className="h-4 w-4" strokeWidth={1.6} />
+                </a>
               </div>
               <address className="not-italic leading-relaxed md:justify-self-center">
                 908 Sangro House<br />417 Anton Lembede<br />Durban, 4001
