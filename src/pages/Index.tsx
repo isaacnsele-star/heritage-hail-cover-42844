@@ -157,7 +157,7 @@ const Index = () => {
                 <img src={logoAsset.url} alt="Zino Consulting" className="w-52" loading="lazy" />
                 <p className="mt-4">Zino Digital — a subsidiary of Zino Consulting (Pty) Ltd</p>
                 <a
-                  href="https://github.com/"
+                  href="https://github.com/isaacnsele-star/heritage-hail-cover-42844"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="GitHub repository"
