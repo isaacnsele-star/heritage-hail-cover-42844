@@ -2,6 +2,7 @@ import { ArrowDown, ArrowUpRight, Check, Code2, Github, Globe2, Mail, Server, Sp
 import { Button } from "@/components/ui/button";
 import logoAsset from "@/assets/zino-consulting-logo.png.asset.json";
 import studioImage from "@/assets/zino-studio.jpg";
+import SizaChat from "@/components/SizaChat";
 
 const services = [
   {
@@ -177,6 +178,7 @@ const Index = () => {
           </div>
         </section>
       </main>
+      <SizaChat />
     </div>
   );
 };
